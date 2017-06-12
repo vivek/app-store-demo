@@ -20,6 +20,11 @@ pipeline {
                     }
                 }
                 stage("Safari") {
+                    when {
+                        expression {
+                            return false
+                        }
+                    }
                     steps {
                         sh 'echo \'setting up selenium environment\''
                         sh 'ping -c 8 localhost'
@@ -32,6 +37,11 @@ pipeline {
                     }
                 }
                 stage("Internet Explorer") {
+                    when {
+                        expression {
+                            return false
+                        }
+                    }
                     steps {
                         sh 'echo \'setting up selenium environment\''
                         sh 'ping -c 4 localhost'
