@@ -15,7 +15,7 @@ pipeline {
       steps {
         parallel(
           "Firefox": {
-            sh 'echo \'setting up selenium environment\''
+            sh 'echo \'setting up selenium environment...\''
             sh 'ping -c 5 localhost'
             
           },
