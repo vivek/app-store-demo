@@ -20,7 +20,7 @@ pipeline {
             
           },
           "Safari": {
-            sh 'echo \'setting up selenium environment\''
+            sh 'echo \'setting up selenium environment...\''
             sh 'ping -c 8 localhost'
             
           },
